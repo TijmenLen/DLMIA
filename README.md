@@ -18,7 +18,7 @@ Visualises the scans or the segmentations, depending on which part of the notebo
 To get an insight into the uncertainty of the model, an uncertainty map is made and compared to the total error of the segmentation. For the uncertainty quantification Monte-Carlo dropout is used, with 10 dropouts per model in the ensemble. Then the standard deviation of each pixel is taken and used to plot the uncertainty. The total error per segmentation is determined by combining the error per mask, RV, LV, Myocardium and the background.
 
 # Uncertainty results
-The results of the uncertainty script can be found at: 
+The results of the uncertainty script can be found at: https://drive.google.com/drive/folders/1FQDyexkSG3M87z-AsO-h-nrHWxS9_JtM?usp=drive_link
 
 # 4D analysis
 For 4D analysis, the trained 2D model is used. 
@@ -37,4 +37,4 @@ Takes as input the 4D segemenations and information excel of the patients. From 
 The outcome is a graph of the volume changing over time. 
 
 # 4D results
-Video files of 4d results of running inference on the test set with the trained ensemble can be found using the following link: https://drive.google.com/drive/folders/1c2XZVIcurkBmshi5sCM7aBD9Vc1uS81v?usp=sharing
+Video files of 4d results of running inference on the test set with the trained ensemble can be found at: https://drive.google.com/drive/folders/1CDDUxJaIDD1Fff8dCYquEnJ1J88g6VMj?usp=drive_link
