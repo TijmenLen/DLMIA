@@ -15,7 +15,10 @@ Visualisation.ipynb
 Visualises the scans or the segmentations, depending on which part of the notebook is run. This allows for visual inspection of the segmentations.
 
 # Uncertainty
+To get an insight into the uncertainty of the model, an uncertainty map is made and compared to the total error of the segmentation. For the uncertainty quantification Monte-Carlo dropout is used, with 10 dropouts per model in the ensemble. Then the standard deviation of each pixel is taken and used to plot the uncertainty. The total error per segmentation is determined by combining the error per mask, RV, LV, Myocardium and the background.
 
+# Uncertainty results
+The results of the uncertainty script can be found at: 
 
 # 4D analysis
 For 4D analysis, the trained 2D model is used. 
