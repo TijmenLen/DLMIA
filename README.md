@@ -1,5 +1,8 @@
 # DLMIA
-This is the final project of group 4, for the course Deep Learning for 3d Medical Image Analysis. The group has taken on the ACDC segmentation challenge, using a 2D-UNet model.
+This is the final project of group 4, for the course Deep Learning for 3d Medical Image Analysis. 
+
+# Research abstract
+Segmentation of the heart in cardiac cine MR is clinically used to quantify cardiac function. We propose the use of a 2D U-Net architecture. The study utilizes data from the Automatic Cardiac Diagnosis Challenge (ACDC), containing labels for the left ventricle, right ventricle and the myocardium. The model contains dropout for regularization, an Adam optimizer, and consists of an averaging ensemble of a 5-fold cross validation. The segmentation model achieved Dice scores of 0.8873, 0.8873 and 0.7939 on the ACDC test set for the left ventricle, right ventricle and myocardium. Uncertainty mapping was implemented to assess model reliability, revealing higher uncertainty at the boundaries of the segmented regions and in slices without relevant structures. Performance showed improved segmentation accuracy in the end-diastolic phase compared to the end-systolic phase. While the model achieved strong results, particularly for the ventricular regions, further improvement could be achieved by incorporating 3D spatial context via a 2.5D or 3D network and by using additional data augmentation techniques. 
 
 # Jupyter notebooks
 2DUnet.ipynb
